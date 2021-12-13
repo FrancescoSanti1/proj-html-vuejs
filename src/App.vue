@@ -4,18 +4,24 @@
       :navList="headerNavList"
     />
     <Jumbo/>
+    <Main/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Jumbo from './components/Jumbo.vue'
+import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Jumbo
+    Jumbo,
+    Main,
+    Footer
   },
   data() {
     return {
@@ -45,23 +51,5 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.container {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.btn {
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 30px;
-  background-color: $btn-green;
-  color: white;
-  text-decoration: none;
-}
-
-.bold {
-  font-weight: bold;
 }
 </style>

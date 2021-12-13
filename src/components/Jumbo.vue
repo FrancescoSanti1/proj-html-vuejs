@@ -13,7 +13,7 @@
                     <div class="content">
                         <div>find the best animal supplies</div>
                         <h1>We know animals are a part of your family, let us help take care of them.</h1>
-                        <a href="#" class="btn">Learn more about us</a>
+                        <a href="#" class="btn white">Learn more about us</a>
                     </div>
                 </div>
             </div>
@@ -24,6 +24,10 @@
                 <div>GET $25 OFF your first purchase of our homemade pet food!</div>
                 <a href="#">Visit the shop</a>
             </div>
+        </div>
+        <div class="jumbo-btns">
+            <div class="jumbo-btn">Demos</div>
+            <div class="jumbo-btn">On sale</div>
         </div>
     </section>
 </template>
@@ -40,6 +44,7 @@ export default {
 
 section {
     color: white;
+    position: relative;
 }
 
 #jumbo-top {
@@ -60,27 +65,12 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .overlay {
-        background-color: rgba($color: #000000, $alpha: 0.2);
-    }
-
     .content {
         padding: 200px 0;
         width: 50%;
 
         div {
             text-transform: uppercase;
-        }
-
-        h1 {
-            font-family: serif;
-            font-size: 30px;
-            margin: 50px 0;
-        }
-
-        .btn {
-            background-color: white;
-            color: black;
         }
     }
 }
@@ -107,6 +97,23 @@ section {
         a {
             color: #dcd5d0;
         }
+    }
+}
+
+.jumbo-btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    .jumbo-btn {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: $light-grey;
+        text-align: center;
+        color: $dark-grey;
     }
 }
 </style>
