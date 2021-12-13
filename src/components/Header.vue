@@ -44,6 +44,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "@/assets/styles/_variables.scss";
 
 header {
 
@@ -77,7 +78,7 @@ header {
     }
 
     nav {
-        height: 50px;
+        height: 60px;
 
         ul {
             height: 100%;

@@ -1,0 +1,112 @@
+<template>
+    <section class="jumbo">
+        <div id="jumbo-top">
+            <div class="container">
+                <div><span class="bold">International</span> Shipping Services</div>
+                <div>See out <span class="bold">store hours</span> and services</div>
+                <div>We price match to give you the <span class="bold">best deals</span></div>
+            </div>
+        </div>
+        <div id="jumbo-main">
+            <div class="overlay">
+                <div class="container">
+                    <div class="content">
+                        <div>find the best animal supplies</div>
+                        <h1>We know animals are a part of your family, let us help take care of them.</h1>
+                        <a href="#" class="btn">Learn more about us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jumbo-bottom">
+            <div class="container">
+                <img src="../assets/img/food-transparent-5-400x223.png" alt="">
+                <div>GET $25 OFF your first purchase of our homemade pet food!</div>
+                <a href="#">Visit the shop</a>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+export default {
+    name: 'Jumbo',
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+@import "@/assets/styles/_variables.scss";
+
+section {
+    color: white;
+}
+
+#jumbo-top {
+    background-color: $dark-green;
+    height: 60px;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+#jumbo-main {
+    background-image: url("../assets/img/banner-5-2x-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .overlay {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .content {
+        padding: 200px 0;
+        width: 50%;
+
+        div {
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: serif;
+            font-size: 30px;
+            margin: 50px 0;
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+#jumbo-bottom {
+    background-color: $dark-green;
+    height: 150px;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 120px;
+            align-self: flex-end;
+        }
+
+        div {
+            margin: 0 20px;
+        }
+
+        a {
+            color: #dcd5d0;
+        }
+    }
+}
+</style>

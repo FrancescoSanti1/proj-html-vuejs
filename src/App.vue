@@ -3,16 +3,19 @@
     <Header
       :navList="headerNavList"
     />
+    <Jumbo/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Jumbo from './components/Jumbo.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Jumbo
   },
   data() {
     return {
@@ -30,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/_variables.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,6 +50,15 @@ export default {
 .container {
   width: 75%;
   margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: $btn-green;
+  color: white;
+  text-decoration: none;
 }
 
 .bold {
