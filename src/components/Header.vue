@@ -1,0 +1,107 @@
+<template>
+    <header>
+        <div id="header-top">
+            <div class="container">
+                <div id="logo">
+                    <img src="../assets/img/dark-pet-logo.png" alt="logo">
+                </div>
+                <div id="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div>
+                    <span class="bold">Questions?</span> Call us: 1.800.123.4567
+                </div>
+                <div class="icons"></div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li v-for="item, i in navList" :key="item.linkName">
+                    <a :href="item.linkPath" 
+                    class="bold" 
+                    :class="i === selectedMenuItem ? 'active' : ''"
+                    >{{item.linkName}}</a>
+                    <span v-if="item.subMenu.length !== 0"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</template>
+
+<script>
+export default {
+    name: 'Header',
+    props: {
+        navList: Array
+    },
+    data() {
+        return {
+            selectedMenuItem: 0
+        }
+    }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+
+header {
+
+    #header-top {
+        border-bottom: 1px solid #dcd5d0;
+
+        .container {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #logo {
+                img {
+                    height: 40px;
+                }
+            }
+
+            #search-bar {
+                background-color: #faf4f4;
+                padding: 10px 20px;
+                border-radius: 20px;
+
+                input {
+                    background-color: #faf4f4;
+                    border: none;
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    nav {
+        height: 50px;
+
+        ul {
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+            li {
+                margin: 0 10px;
+
+                a {
+                    padding: 10px;
+                    color: #978f88;
+                    text-decoration: none;
+
+                    &.active {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+</style>
