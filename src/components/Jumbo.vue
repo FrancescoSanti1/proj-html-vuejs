@@ -2,9 +2,15 @@
     <section class="jumbo">
         <div id="jumbo-top">
             <div class="container">
-                <div><span class="bold">International</span> Shipping Services</div>
-                <div>See out <span class="bold">store hours</span> and services</div>
-                <div>We price match to give you the <span class="bold">best deals</span></div>
+                <div>
+                    <font-awesome-icon icon="map" class="icon"/>
+                    <span class="bold">International</span> Shipping Services</div>
+                <div>
+                    <font-awesome-icon icon="clock" class="icon"/>
+                    See out <span class="bold">store hours</span> and services</div>
+                <div>
+                    <font-awesome-icon icon="check" class="icon"/>
+                    We price match to give you the <span class="bold">best deals</span></div>
             </div>
         </div>
         <div id="jumbo-main">
@@ -56,6 +62,10 @@ section {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        .icon {
+            margin: 0 10px;
+        }
     }
 }
 

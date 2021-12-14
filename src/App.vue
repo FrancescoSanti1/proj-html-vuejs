@@ -47,6 +47,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
 .container {
     width: 75%;
     margin: 0 auto;

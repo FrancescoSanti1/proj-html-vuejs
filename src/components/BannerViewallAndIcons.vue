@@ -23,15 +23,19 @@
         <div class="icons-background">
             <div class="container flex-container">
                 <div class="flex item">
+                    <font-awesome-icon icon="truck" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
                 <div class="flex item">
+                    <font-awesome-icon icon="map" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
                 <div class="flex item">
+                    <font-awesome-icon icon="dollar-sign" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
                 <div class="flex item">
+                    <font-awesome-icon icon="credit-card" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
             </div>
@@ -93,12 +97,19 @@ section {
 
     .flex-container {
         justify-content: space-around;
+        text-align: center;
 
         .flex.item {
             width: 22%;
 
+            .icons {
+                font-size: 3rem;
+                color: white;
+            }
+
             .text {
                 color: $dark-grey;
+                margin-top: 10px;
             }
         }
     }

@@ -6,12 +6,16 @@
                     <img src="../assets/img/dark-pet-logo.png" alt="logo">
                 </div>
                 <div id="search-bar">
+                    <font-awesome-icon icon="search" class="icon"/>
                     <input type="text" placeholder="Search...">
                 </div>
                 <div>
                     <span class="bold">Questions?</span> Call us: 1.800.123.4567
                 </div>
-                <div class="icons"></div>
+                <div class="icons">
+                    <font-awesome-icon icon="shopping-bag" class="icon"/>
+                    <font-awesome-icon icon="user" class="icon"/>
+                </div>
             </div>
         </div>
         <nav>
@@ -61,6 +65,10 @@ header {
                 img {
                     height: 40px;
                 }
+            }
+
+            .icon {
+                margin-right: 10px;
             }
 
             #search-bar {
