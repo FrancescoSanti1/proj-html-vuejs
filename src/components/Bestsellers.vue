@@ -14,22 +14,22 @@
             <div class="flex-item">
                 <img src="../assets/img/product-21-600x600.jpg" alt="">
                 <div class="product-name">Transport cage</div>
-                <div class="price">$25.00</div>
+                <div class="product-price">$25.00</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-20-600x600.jpg" alt="">
                 <div class="product-name">Dog leash</div>
-                <div class="price">$25.00</div>
+                <div class="product-price">$25.00</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-11-600x600.jpg" alt="">
                 <div class="product-name">Animal transport cage</div>
-                <div class="price"><span class="deleted">$35.00</span>$25.00</div>
+                <div class="product-price"><span class="deleted">$35.00</span>$25.00</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-16-600x600.jpg" alt="">
                 <div class="product-name">Colorful cat leash</div>
-                <div class="price">$25.00</div>
+                <div class="product-price">$25.00</div>
             </div>
         </div>
     </div>
@@ -64,22 +64,6 @@ export default {
 
         img {
             width: 100%;
-        }
-
-        .product-name {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-
-        .price {
-            color: $btn-green;
-
-            .deleted {
-                color: $dark-grey;
-                text-decoration: line-through;
-                font-size: 0.7rem;
-                margin: 0 10px;
-            }
         }
     }
 }

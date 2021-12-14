@@ -4,6 +4,9 @@
         <NewArrivals/>
         <Bestsellers/>
         <TestimonialsAndNewsletter/>
+        <BlogPosts/>
+        <BannerViewallAndIcons/>
+        <NewProducts/>
     </main>
 </template>
 
@@ -12,6 +15,9 @@ import BrowseByCategory from '@/components/BrowseByCategory.vue'
 import NewArrivals from '@/components/NewArrivals.vue'
 import Bestsellers from '@/components/Bestsellers.vue'
 import TestimonialsAndNewsletter from '@/components/TestimonialsAndNewsletter.vue'
+import BlogPosts from '@/components/BlogPosts.vue'
+import BannerViewallAndIcons from '@/components/BannerViewallAndIcons.vue'
+import NewProducts from '@/components/NewProducts.vue'
 
 export default {
     name: 'Main',
@@ -19,7 +25,10 @@ export default {
         BrowseByCategory,
         NewArrivals,
         Bestsellers,
-        TestimonialsAndNewsletter
+        TestimonialsAndNewsletter,
+        BlogPosts,
+        BannerViewallAndIcons,
+        NewProducts
     }
 }
 </script>

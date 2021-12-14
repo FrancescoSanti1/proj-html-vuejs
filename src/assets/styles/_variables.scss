@@ -28,6 +28,7 @@ $dark-grey: #978f88;
     background-color: $btn-green;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 
     &.white {
         background-color: white;
@@ -56,4 +57,20 @@ h2 {
 h3 {
     font-size: 2rem;
     margin: 100px 0 30px;
+}
+
+.product-name {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-price {
+    color: $btn-green;
+
+    .deleted {
+        color: $dark-grey;
+        text-decoration: line-through;
+        font-size: 0.7rem;
+        margin: 0 10px;
+    }
 }
