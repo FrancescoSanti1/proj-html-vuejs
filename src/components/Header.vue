@@ -20,12 +20,14 @@
         </div>
         <nav>
             <ul>
-                <li v-for="item, i in navList" :key="item.linkName">
+                <li v-for="item, i in navList" :key="item.linkName" :class="i === selectedMenuItem ? 'active' : ''">
                     <a :href="item.linkPath" 
                     class="bold" 
-                    :class="i === selectedMenuItem ? 'active' : ''"
+                    @click="changeSelectedMenuItem(i)"
                     >{{item.linkName}}</a>
-                    <span v-if="item.subMenu.length !== 0"></span>
+                    <span v-if="item.subMenu.length !== 0">
+                        <font-awesome-icon icon="chevron-down" class="icon"/>
+                    </span>
                 </li>
             </ul>
         </nav>
@@ -41,6 +43,12 @@ export default {
     data() {
         return {
             selectedMenuItem: 0
+        }
+    },
+    methods: {
+        changeSelectedMenuItem(index) {
+            this.selectedMenuItem = index;
+            this.$emit('changeSelectedMenuItem', this.selectedMenuItem);
         }
     }
 }
@@ -98,13 +106,18 @@ header {
 
             li {
                 margin: 0 10px;
+                color: #978f88;
 
                 a {
-                    padding: 10px;
                     color: #978f88;
+                    padding: 10px;
                     text-decoration: none;
+                }
 
-                    &.active {
+                &.active {
+                    color: black;
+
+                    a {
                         color: black;
                     }
                 }

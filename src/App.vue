@@ -1,11 +1,17 @@
 <template>
   <div id="app">
     <Header
-      :navList="headerNavList"
+      :navList="mainNavList"
+      @changeSelectedMenuItem="changeSelectedMenuItem"
     />
     <Jumbo/>
     <Main/>
-    <Footer/>
+    <Footer
+      :brandsList="brandsList"
+      :usefulLinksList="usefulLinksList"
+      :navList="mainNavList"
+      :selectedMenuItem="selectedMenuItem"
+    />
   </div>
 </template>
 
@@ -25,14 +31,26 @@ export default {
   },
   data() {
     return {
-      headerNavList: [
+      mainNavList: [
         {linkName: "Home", linkPath: "#", subMenu: [{subLinkName: "Nome", subLinkPath: "#"}]},
         {linkName: "Shop", linkPath: "#", subMenu: [{subLinkName: "Nome", subLinkPath: "#"}]},
         {linkName: "About", linkPath: "#", subMenu: []},
         {linkName: "Blog", linkPath: "#", subMenu: []},
         {linkName: "Contact", linkPath: "#", subMenu: []},
         {linkName: "Shop by brand", linkPath: "#", subMenu: [{subLinkName: "Nome", subLinkPath: "#"}]}
-      ]
+      ],
+      brandsList: [
+        {linkName: "Bed", linkPath: "#"},{linkName: "Food", linkPath: "#"},{linkName: "Toys", linkPath: "#"},{linkName: "Transport", linkPath: "#"}
+      ],
+      usefulLinksList: [
+        {linkName: "My account", linkPath: "#"},{linkName: "Orders", linkPath: "#"},{linkName: "Checkout", linkPath: "#"},{linkName: "Cart", linkPath: "#"}
+      ],
+      selectedMenuItem: 0
+    }
+  },
+  methods: {
+    changeSelectedMenuItem(item) {
+      this.selectedMenuItem = item;
     }
   }
 }
