@@ -2,7 +2,7 @@
     <div class="container">
         <div class="overlay">
             <div class="content">
-                <div>find the best animal supplies</div>
+                <div class="uppercase-title">find the best animal supplies</div>
                 <h2>New arrivals weekly</h2>
                 <a href="#" class="btn white">Learn more about us</a>
             </div>
@@ -30,10 +30,6 @@ export default {
         padding: 150px 0;
         text-align: center;
         color: white;
-    
-        div {
-            text-transform: uppercase;
-        }
     }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="background">
-            <h3>Testimonials</h3>
+            <h3>Users Testimonials</h3>
             <div class="testimonials container flex-container">
                 <div class="flex-item">
                     <div class="img-container">

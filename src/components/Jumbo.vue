@@ -17,7 +17,7 @@
             <div class="overlay">
                 <div class="container">
                     <div class="content">
-                        <div>find the best animal supplies</div>
+                        <div class="uppercase-title">find the best animal supplies</div>
                         <h1>We know animals are a part of your family, let us help take care of them.</h1>
                         <a href="#" class="btn white">Learn more about us</a>
                     </div>
@@ -32,8 +32,14 @@
             </div>
         </div>
         <div class="jumbo-btns">
-            <div class="jumbo-btn">Demos</div>
-            <div class="jumbo-btn">On sale</div>
+            <div class="jumbo-btn">
+                <font-awesome-icon icon="folder-open" class="icon"/>
+                <div>Demos</div>
+            </div>
+            <div class="jumbo-btn">
+                <div class="sale bold"><sup>$</sup>39</div>
+                <div>On Sale</div>
+            </div>
         </div>
     </section>
 </template>
@@ -78,10 +84,6 @@ section {
     .content {
         padding: 200px 0;
         width: 50%;
-
-        div {
-            text-transform: uppercase;
-        }
     }
 }
 
@@ -124,6 +126,16 @@ section {
         background-color: $light-grey;
         text-align: center;
         color: $dark-grey;
+        cursor: pointer;
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        .sale {
+            color: yellowgreen;
+            font-size: 2.5rem;
+        }
     }
 }
 </style>

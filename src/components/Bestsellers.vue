@@ -2,7 +2,7 @@
     <div class="container">
         <div class="flex-container">
             <div>
-                <p>All-time best sellers</p>
+                <div class="green-title">All-time best sellers</div>
                 <h3>Items everyone loves</h3>
             </div>
             <div>
@@ -12,22 +12,62 @@
 
         <div class="flex-container">
             <div class="flex-item">
-                <img src="../assets/img/product-21-600x600.jpg" alt="">
+                <div class="img-product-container">
+                    <img src="../assets/img/product-21-600x600.jpg" alt="">
+                    <div class="overlay-product">
+                        <div class="content-product">
+                            <div class="icon-container">
+                                <font-awesome-icon icon="check-square" class="icon"/>
+                            </div>
+                            <div class="bold">view cart</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-name">Transport cage</div>
                 <div class="product-price">$25.00</div>
             </div>
             <div class="flex-item">
-                <img src="../assets/img/product-20-600x600.jpg" alt="">
+                <div class="img-product-container">
+                    <img src="../assets/img/product-20-600x600.jpg" alt="">
+                    <div class="overlay-product">
+                        <div class="content-product">
+                            <div class="icon-container">
+                                <font-awesome-icon icon="check-square" class="icon"/>
+                            </div>
+                            <div class="bold">view cart</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-name">Dog leash</div>
                 <div class="product-price">$25.00</div>
             </div>
             <div class="flex-item">
-                <img src="../assets/img/product-11-600x600.jpg" alt="">
+                <div class="img-product-container">
+                    <img src="../assets/img/product-11-600x600.jpg" alt="">
+                    <div class="overlay-product">
+                        <div class="content-product">
+                            <div class="icon-container">
+                                <font-awesome-icon icon="check-square" class="icon"/>
+                            </div>
+                            <div class="bold">view cart</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-name">Animal transport cage</div>
                 <div class="product-price"><span class="deleted">$35.00</span>$25.00</div>
             </div>
             <div class="flex-item">
-                <img src="../assets/img/product-16-600x600.jpg" alt="">
+                <div class="img-product-container">
+                    <img src="../assets/img/product-16-600x600.jpg" alt="">
+                    <div class="overlay-product">
+                        <div class="content-product">
+                            <div class="icon-container">
+                                <font-awesome-icon icon="check-square" class="icon"/>
+                            </div>
+                            <div class="bold">view cart</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-name">Colorful cat leash</div>
                 <div class="product-price">$25.00</div>
             </div>
@@ -54,17 +94,9 @@ export default {
         margin: 30px 0 0 0;
     }
 
-    p {
-        color: $btn-green;
-    }
-
     .flex-item {
         width: 23%;
         text-align: center;
-
-        img {
-            width: 100%;
-        }
     }
 }
 </style>

@@ -4,7 +4,7 @@
             <div class="flex-item popular">
                 <div class="overlay">
                     <div class="content">
-                        <div class="subtitle bold">find the best animal supplies</div>
+                        <div class="uppercase-title">find the best animal supplies</div>
                         <h3>Popular accessories</h3>
                         <a href="#" class="btn white">View all toys accessories</a>
                     </div>
@@ -13,7 +13,7 @@
             <div class="flex-item new">
                 <div class="overlay">
                     <div class="content">
-                        <div class="subtitle bold">find the best food</div>
+                        <div class="uppercase-title">find the best food</div>
                         <h3>New food arrival</h3>
                         <a href="#" class="btn white">View all food products</a>
                     </div>
@@ -22,19 +22,19 @@
         </div>
         <div class="icons-background">
             <div class="container flex-container">
-                <div class="flex item">
+                <div class="flex-item">
                     <font-awesome-icon icon="truck" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
-                <div class="flex item">
+                <div class="flex-item">
                     <font-awesome-icon icon="map" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
-                <div class="flex item">
+                <div class="flex-item">
                     <font-awesome-icon icon="dollar-sign" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
-                <div class="flex item">
+                <div class="flex-item">
                     <font-awesome-icon icon="credit-card" class="icons"/>
                     <div class="text">Free worldwide deliveries</div>
                 </div>
@@ -79,11 +79,6 @@ section {
             margin: 0 auto;
             text-align: center;
 
-            .subtitle {
-                text-transform: uppercase;
-                font-size: 0.9rem;
-            }
-
             h3 {
                 margin: 30px 0 50px;
             }
@@ -99,7 +94,7 @@ section {
         justify-content: space-around;
         text-align: center;
 
-        .flex.item {
+        .flex-item {
             width: 22%;
 
             .icons {
@@ -109,7 +104,7 @@ section {
 
             .text {
                 color: $dark-grey;
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
     }

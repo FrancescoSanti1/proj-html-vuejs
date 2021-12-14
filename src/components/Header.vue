@@ -75,10 +75,6 @@ header {
                 }
             }
 
-            .icon {
-                margin-right: 10px;
-            }
-
             #search-bar {
                 background-color: #faf4f4;
                 padding: 10px 20px;
@@ -89,6 +85,15 @@ header {
                     border: none;
                     width: 300px;
                 }
+            }
+
+            .icon {
+                margin-right: 10px;
+            }
+
+            .icons .icon {
+                font-size: 1.5rem;
+                margin: 0 10px;
             }
         }
     }

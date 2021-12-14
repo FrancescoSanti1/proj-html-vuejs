@@ -5,38 +5,38 @@
         <div class="flex-container">
             <div class="flex-item">
                 <img src="../assets/img/product-9-500x500.jpg" alt="">
-                <div>Bed (1)</div>
+                <div class="product-name">Bed (1)</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-3-500x500.jpg" alt="">
-                <div>Food (6)</div>
+                <div class="product-name">Food (6)</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-2-500x500.jpg" alt="">
-                <div>Toys (6)</div>
+                <div class="product-name">Toys (6)</div>
             </div>
             <div class="flex-item">
                 <img src="../assets/img/product-4-500x500.jpg" alt="">
-                <div>Transport (6)</div>
+                <div class="product-name">Transport (6)</div>
             </div>
         </div>
 
         <div class="flex-container">
             <div class="flex-item green">
                 <h3>Kibble</h3>
-                <p>Dry dog food</p>
+                <p class="green-title">Dry dog food</p>
                 <img src="../assets/img/food-transparent-18.png" alt="">
                 <a href="#" class="btn">Shop dry food</a>
             </div>
             <div class="flex-item green">
                 <h3>Moist</h3>
-                <p>Canned dog food</p>
+                <p class="green-title">Canned dog food</p>
                 <img src="../assets/img/food-transparent-17.png" alt="">
                 <a href="#" class="btn">Shop moist food</a>
             </div>
             <div class="flex-item green">
                 <h3>Frozen</h3>
-                <p>Freeze-Dried dog food</p>
+                <p class="green-title">Freeze-Dried dog food</p>
                 <img src="../assets/img/food-transparent-16.png" alt="">
                 <a href="#" class="btn">Shop frozen food</a>
             </div>
@@ -73,7 +73,7 @@ export default {
                 width: 100%;
             }
 
-            div {
+            .product-name {
                 margin-top: 20px;
             }
         }
@@ -83,6 +83,12 @@ export default {
             background-color: $dark-green;
             margin-top: 50px;
             padding: 40px 0;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+                cursor: pointer;
+            }
 
             h3 {
                 margin: 0 0 20px;
@@ -97,6 +103,11 @@ export default {
                 display: block;
                 width: 60%;
                 margin: 0 auto;
+            }
+
+            .btn:hover {
+                background-color: $btn-green;
+                color: white;
             }
         }
     }

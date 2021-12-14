@@ -73,7 +73,7 @@ export default {
 }
 
 .container {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
 }
 </style>
