@@ -2,18 +2,24 @@
     <main>
         <BrowseByCategory/>
         <NewArrivals/>
+        <Bestsellers/>
+        <TestimonialsAndNewsletter/>
     </main>
 </template>
 
 <script>
 import BrowseByCategory from '@/components/BrowseByCategory.vue'
 import NewArrivals from '@/components/NewArrivals.vue'
+import Bestsellers from '@/components/Bestsellers.vue'
+import TestimonialsAndNewsletter from '@/components/TestimonialsAndNewsletter.vue'
 
 export default {
     name: 'Main',
     components: {
         BrowseByCategory,
-        NewArrivals
+        NewArrivals,
+        Bestsellers,
+        TestimonialsAndNewsletter
     }
 }
 </script>
