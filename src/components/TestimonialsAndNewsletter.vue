@@ -1,28 +1,30 @@
 <template>
     <section>
         <div class="background">
-            <h3>Users Testimonials</h3>
-            <div class="testimonials container flex-container">
-                <div class="flex-item">
-                    <div class="img-container">
-                        <img src="../assets/img/avatar-3-200x200.jpg" alt="">
+            <div class="pet-bg-theme">
+                <h3>Users Testimonials</h3>
+                <div class="testimonials container flex-container">
+                    <div class="flex-item">
+                        <div class="img-container">
+                            <img src="../assets/img/avatar-3-200x200.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
+                        <div class="author">Lisa Smith, ThemeFusion</div>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
-                    <div class="author">Lisa Smith, ThemeFusion</div>
-                </div>
-                <div class="flex-item">
-                    <div class="img-container">
-                        <img src="../assets/img/avatar-1-200x200.jpg" alt="">
+                    <div class="flex-item">
+                        <div class="img-container">
+                            <img src="../assets/img/avatar-1-200x200.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
+                        <div class="author">Lisa Smith, ThemeFusion</div>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
-                    <div class="author">Lisa Smith, ThemeFusion</div>
-                </div>
-                <div class="flex-item">
-                    <div class="img-container">
-                        <img src="../assets/img/avatar-4-200x200.jpg" alt="">
+                    <div class="flex-item">
+                        <div class="img-container">
+                            <img src="../assets/img/avatar-4-200x200.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
+                        <div class="author">Lisa Smith, ThemeFusion</div>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea facilis voluptates officia et reiciendis.</p>
-                    <div class="author">Lisa Smith, ThemeFusion</div>
                 </div>
             </div>
         </div>
@@ -48,9 +50,14 @@ export default {
 @import "@/assets/styles/_variables.scss";
 .background {
     text-align: center;
-    background-color: $dark-green;
+    background: $dark-green;
+    background-image: url('../assets/img/bg-transparent-3.png');
     color: white;
-    padding: 100px 0 200px;
+
+    .pet-bg-theme {
+        background-image: linear-gradient(to top, rgba($color: $dark-green, $alpha: 0.8), rgba($color: $dark-green, $alpha: 0));
+        padding: 100px 0 200px;
+    }
 
     h3 {
         margin: 0 0 50px;
@@ -60,7 +67,7 @@ export default {
         justify-content: space-around;
 
         .flex-item {
-            width: 30%;
+            width: 28%;
 
             .img-container {
                 width: 150px;

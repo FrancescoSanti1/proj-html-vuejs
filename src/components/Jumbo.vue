@@ -4,13 +4,16 @@
             <div class="container flex-container">
                 <div>
                     <font-awesome-icon icon="map" class="icon"/>
-                    <span class="bold">International</span> Shipping Services</div>
+                    <span class="text"><span class="bold">International</span> Shipping Services</span>
+                </div>
                 <div>
                     <font-awesome-icon icon="clock" class="icon"/>
-                    See out <span class="bold">store hours</span> and services</div>
+                    <span class="text">See out <span class="bold">store hours</span> and services</span>
+                </div>
                 <div>
                     <font-awesome-icon icon="check" class="icon"/>
-                    We price match to give you the <span class="bold">best deals</span></div>
+                    <span class="text">We price match to give you the <span class="bold">best deals</span></span>
+                </div>
             </div>
         </div>
         <div id="jumbo-main">
@@ -60,7 +63,8 @@ section {
 }
 
 #jumbo-top {
-    background-color: $dark-green;
+    background: $dark-green;
+    background-image: url('../assets/img/bg-transparent-3.png');
     height: 60px;
 
     .container.flex-container {
@@ -70,6 +74,14 @@ section {
 
         .icon {
             margin: 0 10px;
+        }
+
+        .text {
+            color: #dcd5d0;
+
+            .bold {
+                color: white;
+            }
         }
     }
 }
@@ -87,7 +99,8 @@ section {
 }
 
 #jumbo-bottom {
-    background-color: $dark-green;
+    background: $dark-green;
+    background-image: url('../assets/img/bg-transparent-3.png');
     height: 150px;
 
     .container.flex-container {

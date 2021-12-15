@@ -108,7 +108,8 @@ export default {
             }
 
             &.subscribe {
-                background-color: #264229;
+                background: #264229;
+                background-image: url('../assets/img/bg-transparent-3.png');
                 padding: 30px;
 
                 input {

@@ -23,22 +23,28 @@
             </div>
             <div class="flex-container">
                 <div class="flex-item green">
-                    <h3>Kibble</h3>
-                    <p class="green-title">Dry dog food</p>
-                    <img src="../assets/img/food-transparent-18.png" alt="">
-                    <a href="#" class="btn">Shop dry food</a>
+                    <div class="pet-bg-theme">
+                        <h3>Kibble</h3>
+                        <p class="green-title">Dry dog food</p>
+                        <img src="../assets/img/food-transparent-18.png" alt="">
+                        <a href="#" class="btn">Shop dry food</a>
+                    </div>
                 </div>
                 <div class="flex-item green">
-                    <h3>Moist</h3>
-                    <p class="green-title">Canned dog food</p>
-                    <img src="../assets/img/food-transparent-17.png" alt="">
-                    <a href="#" class="btn">Shop moist food</a>
+                    <div class="pet-bg-theme">
+                        <h3>Moist</h3>
+                        <p class="green-title">Canned dog food</p>
+                        <img src="../assets/img/food-transparent-17.png" alt="">
+                        <a href="#" class="btn">Shop moist food</a>
+                    </div>
                 </div>
                 <div class="flex-item green">
-                    <h3>Frozen</h3>
-                    <p class="green-title">Freeze-Dried dog food</p>
-                    <img src="../assets/img/food-transparent-16.png" alt="">
-                    <a href="#" class="btn">Shop frozen food</a>
+                    <div class="pet-bg-theme">
+                        <h3>Frozen</h3>
+                        <p class="green-title">Freeze-Dried dog food</p>
+                        <img src="../assets/img/food-transparent-16.png" alt="">
+                        <a href="#" class="btn">Shop frozen food</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,9 +88,14 @@ export default {
 
         .flex-item.green {
             width: 32%;
-            background-color: $dark-green;
+            background: $dark-green;
+            background-image: url('../assets/img/bg-transparent-3.png');
             margin-top: 100px;
-            padding: 40px 0;
+
+            .pet-bg-theme {
+                background-image: linear-gradient(to top, rgba($color: $dark-green, $alpha: 1), rgba($color: $dark-green, $alpha: 0));
+                padding: 40px 0;
+            }
 
             &:hover {
                 transform: scale(1.05);

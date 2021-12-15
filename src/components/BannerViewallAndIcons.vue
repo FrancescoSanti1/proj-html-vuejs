@@ -21,22 +21,24 @@
             </div>
         </div>
         <div class="icons-background">
-            <div class="container flex-container">
-                <div class="flex-item">
-                    <font-awesome-icon icon="truck" class="icons"/>
-                    <div class="text bold">Free worldwide deliveries</div>
-                </div>
-                <div class="flex-item">
-                    <font-awesome-icon icon="map" class="icons"/>
-                    <div class="text bold">Free worldwide deliveries</div>
-                </div>
-                <div class="flex-item">
-                    <font-awesome-icon icon="dollar-sign" class="icons"/>
-                    <div class="text bold">Free worldwide deliveries</div>
-                </div>
-                <div class="flex-item">
-                    <font-awesome-icon icon="credit-card" class="icons"/>
-                    <div class="text bold">Free worldwide deliveries</div>
+            <div class="pet-bg-theme">
+                <div class="container flex-container">
+                    <div class="flex-item">
+                        <font-awesome-icon icon="truck" class="icons"/>
+                        <div class="text bold">Free worldwide deliveries</div>
+                    </div>
+                    <div class="flex-item">
+                        <font-awesome-icon icon="map" class="icons"/>
+                        <div class="text bold">Free worldwide deliveries</div>
+                    </div>
+                    <div class="flex-item">
+                        <font-awesome-icon icon="dollar-sign" class="icons"/>
+                        <div class="text bold">Free worldwide deliveries</div>
+                    </div>
+                    <div class="flex-item">
+                        <font-awesome-icon icon="credit-card" class="icons"/>
+                        <div class="text bold">Free worldwide deliveries</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,12 +89,17 @@ section {
 }
 
 .icons-background {
-    background-color: $dark-green;
-    padding: 100px 0;
+    background: $dark-green;
+    background-image: url('../assets/img/bg-transparent-3.png');
+
+    .pet-bg-theme {
+        background-image: linear-gradient(to top, rgba($color: $dark-green, $alpha: 0.8), rgba($color: $dark-green, $alpha: 0));
+    }
 
     .flex-container {
         justify-content: space-around;
         text-align: center;
+        padding: 100px 0;
 
         .flex-item {
             width: 22%;
