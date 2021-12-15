@@ -1,7 +1,7 @@
 <template>
     <header>
         <div id="header-top">
-            <div class="container">
+            <div class="container flex-container">
                 <div id="logo">
                     <img src="../assets/img/dark-pet-logo.png" alt="logo">
                 </div>
@@ -9,9 +9,7 @@
                     <font-awesome-icon icon="search" class="icon"/>
                     <input type="text" placeholder="Search...">
                 </div>
-                <div>
-                    <span class="bold">Questions?</span> Call us: 1.800.123.4567
-                </div>
+                <div><span class="bold">Questions?</span> Call us: 1.800.123.4567</div>
                 <div class="icons">
                     <font-awesome-icon icon="shopping-bag" class="icon"/>
                     <font-awesome-icon icon="user" class="icon"/>
@@ -63,9 +61,8 @@ header {
     #header-top {
         border-bottom: 1px solid #dcd5d0;
 
-        .container {
+        .container.flex-container {
             height: 80px;
-            display: flex;
             justify-content: space-between;
             align-items: center;
 
@@ -76,12 +73,12 @@ header {
             }
 
             #search-bar {
-                background-color: #faf4f4;
+                background-color: $light-grey;
                 padding: 10px 20px;
                 border-radius: 20px;
 
                 input {
-                    background-color: #faf4f4;
+                    background-color: $light-grey;
                     border: none;
                     width: 300px;
                 }
@@ -94,6 +91,11 @@ header {
             .icons .icon {
                 font-size: 1.5rem;
                 margin: 0 10px;
+
+                &:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -107,16 +109,14 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            list-style-type: none;
 
             li {
                 margin: 0 10px;
-                color: #978f88;
+                color: $dark-grey;
 
                 a {
-                    color: #978f88;
+                    color: $dark-grey;
                     padding: 10px;
-                    text-decoration: none;
                 }
 
                 &.active {

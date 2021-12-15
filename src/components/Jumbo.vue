@@ -1,7 +1,7 @@
 <template>
-    <section class="jumbo">
+    <section id="jumbo">
         <div id="jumbo-top">
-            <div class="container">
+            <div class="container flex-container">
                 <div>
                     <font-awesome-icon icon="map" class="icon"/>
                     <span class="bold">International</span> Shipping Services</div>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div id="jumbo-bottom">
-            <div class="container">
+            <div class="container flex-container">
                 <img src="../assets/img/food-transparent-5-400x223.png" alt="">
                 <div>GET $25 OFF your first purchase of our homemade pet food!</div>
                 <a href="#">Visit the shop</a>
@@ -63,9 +63,8 @@ section {
     background-color: $dark-green;
     height: 60px;
 
-    .container {
+    .container.flex-container {
         height: 100%;
-        display: flex;
         justify-content: space-around;
         align-items: center;
 
@@ -91,9 +90,8 @@ section {
     background-color: $dark-green;
     height: 150px;
 
-    .container {
+    .container.flex-container {
         height: 100%;
-        display: flex;
         justify-content: center;
         align-items: center;
 

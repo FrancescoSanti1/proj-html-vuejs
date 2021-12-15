@@ -71,9 +71,4 @@ export default {
     box-sizing: border-box;
     font-size: 14px;
 }
-
-.container {
-    width: 70%;
-    margin: 0 auto;
-}
 </style>

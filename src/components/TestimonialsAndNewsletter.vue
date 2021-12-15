@@ -90,7 +90,7 @@ export default {
     background-image: url("../assets/img/banner-7-2x-scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -50px;
+    margin-top: -80px;
 
     .content {
         padding: 100px 0 100px 100px;
@@ -107,6 +107,7 @@ export default {
         }
 
         input {
+            width: 60%;
             padding: 15px 25px;
             background-color: $light-grey;
             border-radius: 30px;

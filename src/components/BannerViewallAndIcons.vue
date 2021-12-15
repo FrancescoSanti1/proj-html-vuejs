@@ -24,19 +24,19 @@
             <div class="container flex-container">
                 <div class="flex-item">
                     <font-awesome-icon icon="truck" class="icons"/>
-                    <div class="text">Free worldwide deliveries</div>
+                    <div class="text bold">Free worldwide deliveries</div>
                 </div>
                 <div class="flex-item">
                     <font-awesome-icon icon="map" class="icons"/>
-                    <div class="text">Free worldwide deliveries</div>
+                    <div class="text bold">Free worldwide deliveries</div>
                 </div>
                 <div class="flex-item">
                     <font-awesome-icon icon="dollar-sign" class="icons"/>
-                    <div class="text">Free worldwide deliveries</div>
+                    <div class="text bold">Free worldwide deliveries</div>
                 </div>
                 <div class="flex-item">
                     <font-awesome-icon icon="credit-card" class="icons"/>
-                    <div class="text">Free worldwide deliveries</div>
+                    <div class="text bold">Free worldwide deliveries</div>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@ section {
 
         .content {
             padding: 150px 0;
-            width: 40%;
+            width: 60%;
             margin: 0 auto;
             text-align: center;
 

@@ -1,13 +1,15 @@
 <template>
-    <div class="container">
-        <div class="overlay">
-            <div class="content">
-                <div class="uppercase-title">find the best animal supplies</div>
-                <h2>New arrivals weekly</h2>
-                <a href="#" class="btn white">Learn more about us</a>
+    <section>
+        <div class="container">
+            <div class="overlay">
+                <div class="content">
+                    <div class="uppercase-title">find the best animal supplies</div>
+                    <h2>New arrivals weekly</h2>
+                    <a href="#" class="btn white">Learn more about us</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

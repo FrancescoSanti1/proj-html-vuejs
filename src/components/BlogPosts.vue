@@ -21,39 +21,39 @@
                     <img src="../assets/img/blog-2-600x600.jpg" alt="">
                     <div class="overlay">
                         <div class="content">
-                            <div class="overlay-title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
+                            <div class="overlay-title">Stop cats from scratching furniture</div>
                             <div>Tips &amp; tricks</div>
                         </div>
                     </div>
                 </div>
-                <div class="title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
-                <div class="date">April 21st, 2020</div>
+                <div class="title">Stop cats from scratching furniture</div>
+                <div class="date">April 19th, 2020</div>
             </div>
             <div class="flex-item">
                 <div class="img-container">
                     <img src="../assets/img/blog-3-600x600.jpg" alt="">
                     <div class="overlay">
                         <div class="content">
-                            <div class="overlay-title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
+                            <div class="overlay-title">Where to buy the best pet food</div>
                             <div>Tips &amp; tricks</div>
                         </div>
                     </div>
                 </div>
-                <div class="title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
-                <div class="date">April 21st, 2020</div>
+                <div class="title">Where to buy the best pet food</div>
+                <div class="date">April 18th, 2020</div>
             </div>
             <div class="flex-item">
                 <div class="img-container">
                     <img src="../assets/img/blog-4-600x600.jpg" alt="">
                     <div class="overlay">
                         <div class="content">
-                            <div class="overlay-title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
+                            <div class="overlay-title">Proper care for your pet toys</div>
                             <div>Tips &amp; tricks</div>
                         </div>
                     </div>
                 </div>
-                <div class="title">How to &lsquo;loose leash walk&rsquo; tour dog</div>
-                <div class="date">April 21st, 2020</div>
+                <div class="title">Proper care for your pet toys</div>
+                <div class="date">April 17th, 2020</div>
             </div>
         </div>
         <a href="#" class="btn">Read all articles</a>
@@ -88,6 +88,7 @@ export default {
             .img-container {
                 position: relative;
 
+                // sovrascritto in questo caso il comportamento di default
                 .overlay {
                     position: absolute;
                     top: 0;
@@ -133,6 +134,7 @@ export default {
             }
 
             .title {
+                font-size: 1.3rem;
                 line-height: 2rem;
                 margin-top: 20px;
             }
@@ -140,6 +142,7 @@ export default {
             .date {
                 font-size: 0.8rem;
                 color: $dark-grey;
+                margin-top: 10px;
             }
         }
     }

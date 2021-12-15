@@ -50,6 +50,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="onsale">Sale!</div>
                 </div>
                 <div class="product-name">Dog bone</div>
                 <div class="product-price"><span class="deleted">$26.00</span>$18.00</div>

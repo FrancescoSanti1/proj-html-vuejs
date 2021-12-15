@@ -5,7 +5,7 @@
                 <div class="flex-container">
                     <div class="flex-item">
                         <img src="../assets/img/mobile-light-pet-logo-2x.png" alt="logo">
-                        <p>1234 Avada Avenue<br>info&commat;company.com<br>Call us: 0123 345 6789</p>
+                        <p>1234 Avada Avenue Avadaville<br>info&commat;company.com<br>Call us: 0123 345 6789</p>
                     </div>
                     <div class="flex-item">
                         <h5>Shop by brand</h5>
@@ -33,7 +33,7 @@
                 <nav>
                     <ul>
                         <li v-for="item, i in navList" :key="item.linkName">
-                            <a :href="item.pathName" :class="i === selectedMenuItem ? 'active' : ''">{{item.linkName}}</a>
+                            <a :href="item.linkPath" :class="i === selectedMenuItem ? 'active' : ''">{{item.linkName}}</a>
                         </li>
                     </ul>
                 </nav>
@@ -85,17 +85,24 @@ export default {
             
             p {
                 line-height: 2rem;
+                margin-top: 30px;
+            }
+
+            h5 {
+                margin-bottom: 40px;
             }
 
             ul {
-                list-style-type: none;
 
                 li {
                     margin: 20px 0;
 
                     a {
                         color: white;
-                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -107,7 +114,7 @@ export default {
                 input {
                     width: 100%;
                     padding: 15px 25px;
-                    margin: 30px 0;
+                    margin-bottom: 30px;
                     background-color: $light-grey;
                     border-radius: 30px;
                     border: none;
@@ -125,16 +132,20 @@ export default {
         text-align: center;
 
         ul {
-            list-style-type: none;
 
             li {
                 display: inline-block;
-                margin: 30px 10px;
+                margin: 50px 10px;
 
                 a {
                     color: $dark-grey;
 
                     &.active {
+                        color: white;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
                         color: white;
                     }
                 }
@@ -149,6 +160,11 @@ export default {
             color: white;
             margin: 0 10px;
             font-size: 1.2rem;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+            }
         }
     }
 }
